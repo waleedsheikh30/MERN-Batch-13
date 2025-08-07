@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    background-color: yellow;
+}
+
+div {
+    /* background-color: red; */
+}
+
+/* .classname
+#idname */
+
+#main {
+    background-color: red;
+    width: 35%;
+    /* vw means viewport width */
+    /* width: 50vw;  */
+    /* height: 500%; */
+    /* height: 100vh; */
+    padding: 10px 20px 30px 40px;
+    /* padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-top: 30px; */
+
+    margin: 20px;
+    border: 3px solid;
+    box-sizing: content-box;
+}
+
+.main2 {
+    background-color: yellow;
+}
+
+.hello {
+    color: blueviolet;
+    background-color: black;
+}
+
+.hello3 {
+    background-color: pink;
+}
+
+h1 {
+    font-size: 5rem;
+    color: aquamarine;
+}
+
+p {
+    font-size: .5rem;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    box-sizing: content-box;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+.second {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 30px;
+    padding: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* units in css */
+/* px, rem, vh, vw, % */
