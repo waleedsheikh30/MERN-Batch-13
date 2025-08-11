@@ -1,0 +1,66 @@
+/* pesaudo element */
+p:first-child{
+    color: red;
+    /* background-color: yellow; */
+}
+
+p:nth-child(4){
+    color: blue;
+}
+
+p{
+    line-height: -5px;
+    letter-spacing: 5px;
+    /* max-width: 70%; */
+    /* max-height: 150px; */
+    min-width: 50%;
+    word-spacing: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    /* flex-grow: 2; */
+}
+
+.hero h1{
+    /* text-align: center; */
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+}
+
+.main ul{
+    flex-shrink: 3;
+    flex-grow: 3;
+    
+}
+.main ul li{
+    border: 1px solid;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+button {
+    cursor: not-allowed;
+}
