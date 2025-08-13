@@ -1,0 +1,94 @@
+*{
+    /* hex color code */
+    color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.main {
+    background-image: url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222184908/web-development1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    filter: brightness(120%);
+    width: 300px;
+    margin: 80px;
+    padding: 20px;
+    border: 1px solid blue;
+    box-shadow: 10px 14px 25px rgba(0, 0, 0, 0.618);
+    text-shadow: 2px 4px 6px rgba(234, 11, 11, 0.618);
+    /* 1 -> fully visible, 0-> fully hidden 0.5-> partial visible */
+    opacity: 1;
+}
+
+h1{
+    /* float: right; */
+}
+
+ul li{
+    list-style-type: upper-alpha;
+    color: #ffff;
+}
+
+.gallery{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: 200px 1fr 2fr;
+    grid-template-rows: 100px auto;
+    gap: 15px;
+}
+
+.gallery div {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background: green;
+    clip-path: circle(50% at 50% 50%);
+    /* clip-path: ellipse(50% 30% at 50% 50%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%); */
+    /* clip-path: inset(10px 20px 30px 40px); */
+}
+
+.circle:hover{
+    background-color: blue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    animation: bounce 2s ease-in-out infinite;
+    transition: 0.5s ease;
+}
+
+@keyframes bounce{
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+}
+
+.box:hover{
+    transform: scale(1.2);
+    background-color: red;
+}
